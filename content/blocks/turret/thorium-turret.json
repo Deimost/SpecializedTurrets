@@ -1,0 +1,33 @@
+{
+    "type": "doubleTurret",
+    "name": "Thorium turret",
+    "description": "I don't know what it is",
+    "health": 625,
+    "size": 1,
+    "reload": 20,
+    "range": 100,
+    "ammoUseEffect": "shellEjectSmall",
+    "inaccuracy": 2,
+    "rotatespeed": 10,
+    "ammo": {
+        "thorium": {
+            "speed": 2.5,
+            "damage": 50,
+            "reloadMultiplier": 1.0,
+            "bulletWidth": 7,
+            "bulletHeight": 9,
+            "shootEffect": "shootSmall",
+            "smokeEffect": "shootSmallSmoke",
+            "type": "BasicBulletType",
+            
+            "ammoMultiplier": 2,
+            "backColor": "cb8ebf",
+            "frontColor": "f9a3c7"
+        }
+    }
+    "requirements": [
+       {"item": "thorium", "amount": 40},
+    ],
+    "category": "turret",
+    "research": "titanium-turret"
+}
