@@ -1,0 +1,39 @@
+type: itemTurret
+name: Lead turret
+description: Lead turret - the same as the Duo, only lead.
+health: 250
+size: 1
+reloadTime: 20
+range: 100
+inaccuracy: 2
+alternate: true
+rotateSpeed: 10
+shots: 2
+shootCone: 15
+spread: 4
+restitution: 0.03
+ammoTypes: {
+    lead: {
+        type: BasicBulletType
+        speed: 2.5
+        damage: 10
+        reloadMultiplier: 1.0
+        width: 7
+        height: 9
+        shootEffect: shootSmall
+        smokeEffect: shootSmallSmoke   
+        ammoMultiplier: 2
+        backColor: 8c7fa9
+        frontColor: ab99d3
+        }
+    }
+    requirements: [
+       lead/35
+    ]
+    category: turret
+    research: {
+        parent: duo
+        requirements: [
+       lead/1050
+    ]
+}
