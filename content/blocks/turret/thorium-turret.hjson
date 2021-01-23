@@ -1,0 +1,39 @@
+type: itemTurret
+name: Thorium turret
+description: i don't know what it is
+health: 625
+size: 1
+reloadTime: 20
+range: 100
+inaccuracy: 2
+alternate: true
+rotateSpeed: 10
+shots: 2
+shootCone: 15
+spread: 4
+restitution: 0.03
+ammoTypes: {
+    thorium: {
+        type: BasicBulletType
+        speed: 2.5
+        damage: 50
+        reloadMultiplier: 1.0
+        width: 7
+        height: 9
+        shootEffect: shootSmall
+        smokeEffect: shootSmallSmoke   
+        ammoMultiplier: 2
+        backColor: cb8ebf
+        frontColor: f9a3c7
+        }
+    }
+    requirements: [
+       thorium/40
+    ]
+    category: turret
+    research: {
+        parent: titanium-turret
+        requirements: [
+       thorium/1200
+    ]
+}
